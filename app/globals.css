@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --canvas: #0E1117;
+  --surface: #161B22;
+  --surface-elevate: #1F2633;
+  --border: #27303E;
+  --accent: #E5A93C;
+  --accent-hover: #D4982F;
+  --text-primary: #F0F6FC;
+  --text-muted: #8B949E;
+  --status-positive: #3FB950;
+  --status-negative: #F85149;
+  --status-pending: #DB6D28;
+}
+
+@theme {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-surface-elevate: var(--surface-elevate);
+  --color-border-subtle: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-text-primary: var(--text-primary);
+  --color-text-muted: var(--text-muted);
+  --color-status-positive: var(--status-positive);
+  --color-status-negative: var(--status-negative);
+  --color-status-pending: var(--status-pending);
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+html {
+  background-color: var(--canvas);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--canvas);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tabular numerals for price figures and currency shorthand */
+.tabular-numbers {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Visible focus rings for accessible navigation */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

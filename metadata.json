@@ -1,0 +1,6 @@
+{
+  "name": "Donut SMP Marketplace",
+  "description": "The dedicated in-game economy hub for Donut SMP players: Map Art gallery and commissions, Buy/Sell trading board, Build services, tracked order state machine, and verified vouch reputation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
